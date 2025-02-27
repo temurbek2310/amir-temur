@@ -1,4 +1,3 @@
-"use client";
 export default function Spinner({ className }) {
   return (
     <div role="status">

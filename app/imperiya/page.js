@@ -1,17 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+
+import { useState } from "react";
 import Navbar from "../components/navbar";
 import Spinner from "../components/spinner";
 
 export default function Imperiya() {
-  const [isMounted, setIsMounted] = useState(false);
   const [isLoading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) return null; 
 
   return (
     <div className="min-h-screen bg-gray-900 text-white py-16 px-6">
