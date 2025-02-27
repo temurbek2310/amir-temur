@@ -110,6 +110,14 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [quizFinished, setQuizFinished] = useState(false);
 
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null; 
+
   useEffect(() => {
     setShuffledQuestions(shuffle([...questions])); // CSR vaqtida shuffle qilish
   }, []);

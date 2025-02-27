@@ -1,10 +1,24 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
 import Spinner from "../components/spinner";
 
 export default function Adolat() {
+  const [windowWidth, setWindowWidth] = useState(0);
   const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.innerWidth);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (windowWidth < 768) {
+      setLoading(false);
+    }
+  }, [windowWidth]);
+
   return (
     <div className="min-h-screen bg-gray-900 text-white py-16 px-6">
       <Navbar />
