@@ -5,11 +5,11 @@
 // import Timeline from "./components/timeline";
 // import AmirTemur3D from "./components/amir-temur3d";
 import dynamic from "next/dynamic";
-const AmirTemur3D = dynamic(() => import("../components/AmirTemur3D"), { ssr: false });
-const HeroSection = dynamic(() => import("../components/HeroSection"), { ssr: false });
-const Maps = dynamic(() => import("../components/Maps"), { ssr: false });
-const Navbar = dynamic(() => import("../components/Navbar"), { ssr: false });
-const Timeline = dynamic(() => import("../components/Timeline"), { ssr: false });
+const AmirTemur3D = dynamic(() => import("./components/amir-temur3d"), { ssr: false });
+const HeroSection = dynamic(() => import("./components/hero"), { ssr: false });
+const Maps = dynamic(() => import("./components/maps"), { ssr: false });
+const Navbar = dynamic(() => import("./components/navbar"), { ssr: false });
+const Timeline = dynamic(() => import("./components/timeline"), { ssr: false });
 
 export default function Home() {
   return (
