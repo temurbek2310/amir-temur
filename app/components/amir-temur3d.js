@@ -12,8 +12,11 @@ export default function AmirTemur3D() {
       <h2 className="text-4xl font-bold text-center mb-10">
         Amir Temur 3D Haykali
       </h2>
-      <div className="max-w-4xl mx-auto h-96">
-        <Canvas camera={{ position: [0, 4, 10] }}>
+      <div className="max-w-4xl mx-auto h-screen">
+        <Canvas
+          camera={{ position: [0, 25, 20], fov: 50 }}
+          onCreated={({ camera }) => camera.lookAt(0, 4, 0)}
+        >
           {" "}
           {/* Kamerani uzoqroqqa qo'ydik */}
           <ambientLight intensity={1} />
