@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const questions = [
   {
-    question: "Amir Temur qachon yili tug‘ilgan?",
+    question: "Amir Temur qachon tug‘ilgan?",
     options: ["1336", "1405", "1220", "1350"],
     answer: "1336",
   },
@@ -46,7 +46,7 @@ const questions = [
     answer: "34",
   },
   {
-    question: "Suyurgatmish ning o'g'li kim?",
+    question: "Suyurg'atmish ning o'g'li kim?",
     options: ["Shohrux Mirzo", "Mahmudxon", "Ismoilxon", "Donishmandchaxon"],
     answer: "Mahmudxon",
   },
@@ -60,7 +60,7 @@ const questions = [
     question:
       "Amir Temurning Mo'g'ulistonga qarshi kurashi necha yilga yaqin davom etgan",
     options: ["20", "14", "23", "30"],
-    answer: "30",
+    answer: "20",
   },
   {
     question: "Turon taxtiga Amir Temurdan keyin kim voris etib tayinlangan",
@@ -74,7 +74,7 @@ const questions = [
   },
   {
     question: "Zafarnoman asari kim tomonidan yozilgan?",
-    options: ["M.Ivanin", "Ibn Arabshoh", "Nizomiddin Shomiy", "Hondamir"],
+    options: ["M.Ivanin", "Ibn Arabshoh", "Nizomiddin Shomiy", "Xondamir"],
     answer: "Nizomiddin Shomiy",
   },
   {

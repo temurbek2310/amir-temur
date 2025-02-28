@@ -4,7 +4,6 @@ import {
   TileLayer,
   Marker,
   Tooltip,
-  // Popup,
   Polyline,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -98,7 +97,7 @@ const locations = [
 ];
 
 const routeCoordinates = locations.map((loc) => loc.position);
-const polylineOptions = { color: "green", weight: 2, opacity: 0.8 };
+const polylineOptions = { color: "red", weight: 2, opacity: 0.8 };
 
 export default function Maps() {
   const [selectedCity, setSelectedCity] = useState(null);
